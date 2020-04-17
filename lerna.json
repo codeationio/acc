@@ -1,0 +1,9 @@
+{
+  "$schema": "https://gist.githubusercontent.com/jeremyben/0a64d88bb02b63c505214d0748aaa896/raw/abaf30bcf970f6c2c90567d256be273f36886fb6/lerna-schema.json",
+  "packages": [
+    "packages/*"
+  ],
+  "version": "0.0.0",
+  "useWorkspaces": true,
+  "npmClient": "yarn"
+}
