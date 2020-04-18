@@ -1,5 +1,5 @@
 /**
- * Contract source: https://git.io/JvjBR
+ * Contract source: https://git.io/Jee3t
  *
  * Feel free to let us know via PR, if you find something broken in this contract
  * file.
