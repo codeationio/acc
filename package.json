@@ -2,7 +2,7 @@
   "name": "@codeation/acc",
   "private": true,
   "scripts": {
-    "start": "CI=true lerna run start --stream",
+    "start": "lerna run start --stream",
     "bootstrap": "lerna run bootstrap --stream",
     "build": "lerna run build --stream"
   },
