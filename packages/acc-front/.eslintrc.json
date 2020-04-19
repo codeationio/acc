@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "../../.eslintrc.json",
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "prettier/prettier": "error"
+  },
+  "plugins": [
+    "react",
+    "react-hooks"
+  ]
+}
