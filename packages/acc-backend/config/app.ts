@@ -5,14 +5,14 @@
  * file.
  */
 
-import proxyAddr from 'proxy-addr'
-import Env from '@ioc:Adonis/Core/Env'
-import { LoggerConfigContract } from '@ioc:Adonis/Core/Logger'
-import { RequestConfigContract } from '@ioc:Adonis/Core/Request'
-import { ResponseConfigContract } from '@ioc:Adonis/Core/Response'
-import { ProfilerConfigContract } from '@ioc:Adonis/Core/Profiler'
+import proxyAddr from 'proxy-addr';
+import Env from '@ioc:Adonis/Core/Env';
+import { LoggerConfigContract } from '@ioc:Adonis/Core/Logger';
+import { RequestConfigContract } from '@ioc:Adonis/Core/Request';
+import { ResponseConfigContract } from '@ioc:Adonis/Core/Response';
+import { ProfilerConfigContract } from '@ioc:Adonis/Core/Profiler';
 
-type HttpOptions = RequestConfigContract & ResponseConfigContract
+type HttpOptions = RequestConfigContract & ResponseConfigContract;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +26,7 @@ type HttpOptions = RequestConfigContract & ResponseConfigContract
 | data loss.
 |
 */
-export const appKey: string = Env.getOrFail('APP_KEY') as string
+export const appKey: string = Env.getOrFail('APP_KEY') as string;
 
 /*
 |--------------------------------------------------------------------------
@@ -128,7 +128,7 @@ export const http: HttpOptions = {
   |
   */
   forceContentNegotiationToJSON: true,
-}
+};
 
 /*
 |--------------------------------------------------------------------------
@@ -182,7 +182,7 @@ export const logger: LoggerConfigContract = {
   |
   */
   prettyPrint: Env.get('NODE_ENV') === 'development',
-}
+};
 
 /*
 |--------------------------------------------------------------------------
@@ -221,4 +221,4 @@ export const profiler: ProfilerConfigContract = {
   |
   */
   whitelist: [],
-}
+};

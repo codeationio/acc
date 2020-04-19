@@ -1,11 +1,18 @@
 {
   "extends": [
-    "plugin:prettier/recommended",
-    "prettier"
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
   "rules": {
-    "prettier/prettier": "error",
-    "@typescript-eslint/semi":  [2, "always"],
-    "semi":  [2, "always"]
+    "@typescript-eslint/semi": [2, "always"],
+    "semi": [2, "always"]
   }
 }

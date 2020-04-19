@@ -5,7 +5,7 @@
  * file.
  */
 
-import { HashConfigContract } from '@ioc:Adonis/Core/Hash'
+import { HashConfigContract } from '@ioc:Adonis/Core/Hash';
 
 /*
 |--------------------------------------------------------------------------
@@ -69,6 +69,6 @@ const hashConfig: HashConfigContract = {
       rounds: 10,
     },
   },
-}
+};
 
-export default hashConfig
+export default hashConfig;

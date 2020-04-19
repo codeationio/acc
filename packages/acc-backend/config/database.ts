@@ -5,12 +5,14 @@
  * file.
  */
 
-import Env from '@ioc:Adonis/Core/Env'
-import Application from '@ioc:Adonis/Core/Application'
-import { OrmConfigContract } from '@ioc:Adonis/Lucid/Orm'
-import { DatabaseConfigContract } from '@ioc:Adonis/Lucid/Database'
+import Env from '@ioc:Adonis/Core/Env';
+import Application from '@ioc:Adonis/Core/Application';
+import { OrmConfigContract } from '@ioc:Adonis/Lucid/Orm';
+import { DatabaseConfigContract } from '@ioc:Adonis/Lucid/Database';
 
-const databaseConfig: DatabaseConfigContract & { orm: Partial<OrmConfigContract> } = {
+const databaseConfig: DatabaseConfigContract & {
+  orm: Partial<OrmConfigContract>;
+} = {
   /*
   |--------------------------------------------------------------------------
   | Connection
@@ -106,8 +108,7 @@ const databaseConfig: DatabaseConfigContract & { orm: Partial<OrmConfigContract>
   | - Or define a custom function to compute the primary key for a given model.
   |
   */
-  orm: {
-  },
-}
+  orm: {},
+};
 
-export default databaseConfig
+export default databaseConfig;

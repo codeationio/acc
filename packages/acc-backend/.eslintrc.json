@@ -1,6 +1,10 @@
 {
   "extends": [
-    "plugin:adonis/typescriptApp",
-    "../../.eslintrc.json"
-  ]
+    "../../.eslintrc.json",
+    "plugin:adonis/typescriptApp"
+  ],
+  "rules": {
+    "@typescript-eslint/semi":  [2, "always"],
+    "semi":  [2, "always"]
+  }
 }
